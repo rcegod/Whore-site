@@ -16,6 +16,31 @@ setInterval(() => {
 }, 300);
 </script>
 
+<style>
+#vid {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    overflow: hidden;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+    background: #070915;
+    background: rgba(7,9,21,.5);
+    filter: brightness(62.5%);
+    top: 50%;
+    left: 50%
+}
+</style>
+
 <html lang="en">
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -34,7 +59,6 @@ setInterval(() => {
     <meta property="og:url" content="index.php">
     <meta property="og:description" content="Created by falicity"/>
     <meta property="og:image" content="banner-og.png">
-    <link rel="stylesheet" href="style.css">
 	
     <body>
         <iframe src="silence.html" allow="autoplay" id="audio" style="display:none"></iframe>
